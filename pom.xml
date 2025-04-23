@@ -19,7 +19,14 @@
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-
+		
+        <!-- pom.xml Lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.38</version>
+		</dependency>
+		
 	</dependencies>
   
   
