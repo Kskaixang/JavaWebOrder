@@ -15,7 +15,8 @@ public class ProductDAO {
 	 }
 	 
 	 public Product getProduct(String item) {
-		 return products.stream().filter(p -> p.getItem().equals(item))
+		 return products.stream()
+				 .filter(p -> p.getItem().equals(item))
 				 .findFirst()
 				 .orElseThrow();		 
 	 }
