@@ -7,14 +7,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>訂單首頁</title>
+		<title>修改訂單</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
 		<link rel="stylesheet" href="/JavaWebOrder/css/buttons.css">
 	</head>
 	<body style="padding:20px">
-		<form class="pure-form" method="post" action="/JavaWebOrder/order">
+		<form class="pure-form" method="post" action="/JavaWebOrder/order/update">
 			<fieldset>
-				<legend>訂單</legend>
+				<legend>修改訂單</legend>
+				Index:
+				<input type="number" name="index" value="${ index }" readonly><p/>
 				品名:
 				<select name="item"> 
 					<option value="牛肉麵">牛肉麵</option>
@@ -24,7 +26,7 @@
 					<option value="搶鍋面">搶鍋面</option>
 				</select>	
 				<p/>
-				<button type="submit" class="pure-button button-success">送出訂單</button>			
+				<button type="submit" class="pure-button button-success">修改訂單</button>			
 			</fieldset>
 		</form>
 		
